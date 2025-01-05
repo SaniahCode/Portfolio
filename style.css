@@ -1,0 +1,136 @@
+/* styles.css */
+
+/* General Reset */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    /* background: #cbb463;   */
+    background: linear-gradient(to right, #8e793a, #b36162); /* Warm Orange to Coral Red */
+    color: rgb(17, 15, 15);
+}
+
+/* Header */
+.header {
+    background: linear-gradient(to right, #8e793a, #b36162);
+    color: white;
+    text-align: center;
+    padding: 4rem 0;
+}
+.header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.header .highlight {
+    color: #1d0d04;
+}
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.header .btn {
+    padding: 0.5rem 1.5rem;
+    background: white;
+    color: #140906;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.header .btn:hover {
+    background: #ffdd57;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.navbar ul li {
+    margin: 0 1rem;
+}
+.navbar ul li a {
+    text-decoration: none;
+    color: #212224;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar ul li a:hover {
+    color: #ffdd57;
+}
+
+/* Sections */
+.section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.section p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+.skill {
+    /* background: #007bff; */
+    background: linear-gradient(to right, #b6938f, #cfb888);
+    color: rgb(27, 25, 25);
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.project {
+    /* background: rgb(207, 152, 69); */
+    background: linear-gradient(to right, #c08a84, #c4b187);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+.project:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer */
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.tag{
+    margin-right: 1rem;
+}
